@@ -82,16 +82,14 @@ const SingleProduct = () => {
             </div>
             <div className="product-data-info">
               <p>
-                Available: 
+                Available:
                 <span>{stock > 0 ? " In Stock" : " Not Available"}</span>
               </p>
               <p>
                 ID: <span>{id}</span>
               </p>
               <p>
-                Brand: <span>
-                  {company}
-                </span>
+                Brand: <span>{company}</span>
               </p>
             </div>
           </div>
@@ -104,6 +102,10 @@ const SingleProduct = () => {
 const Wrapper = styled.section`
   .container {
     padding: 9rem 0;
+  }
+  .product_images {
+    display: flex;
+    align-items: center;
   }
   .product-data {
     display: flex;
